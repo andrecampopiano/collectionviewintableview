@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellCollection" id="gTV-IL-0wX" customClass="CollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="82" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="82" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bst-9j-MP4">
+                        <rect key="frame" x="0.0" y="0.0" width="82" height="80"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mtc-r8-lDv">
+                                <rect key="frame" x="16" y="0.0" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="W7a-gr-dUe"/>
+                                    <constraint firstAttribute="height" constant="50" id="xUU-Cg-Pxl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1c-g5-W1A">
+                                <rect key="frame" x="4" y="58" width="74" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="y1c-g5-W1A" firstAttribute="leading" secondItem="bst-9j-MP4" secondAttribute="leading" constant="4" id="7W0-z3-voH"/>
+                            <constraint firstItem="mtc-r8-lDv" firstAttribute="top" secondItem="bst-9j-MP4" secondAttribute="top" id="AFh-BX-RJA"/>
+                            <constraint firstAttribute="trailing" secondItem="y1c-g5-W1A" secondAttribute="trailing" constant="4" id="L09-B9-TRb"/>
+                            <constraint firstItem="y1c-g5-W1A" firstAttribute="top" secondItem="mtc-r8-lDv" secondAttribute="bottom" constant="8" id="RHI-9b-8uG"/>
+                            <constraint firstItem="mtc-r8-lDv" firstAttribute="centerX" secondItem="bst-9j-MP4" secondAttribute="centerX" id="dM8-7k-T5e"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bst-9j-MP4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5GB-mN-uQp"/>
+                <constraint firstAttribute="trailing" secondItem="bst-9j-MP4" secondAttribute="trailing" id="8gv-ab-ieo"/>
+                <constraint firstItem="bst-9j-MP4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kiN-SN-nhV"/>
+                <constraint firstAttribute="bottom" secondItem="bst-9j-MP4" secondAttribute="bottom" id="wV4-AB-pUl"/>
+            </constraints>
+            <size key="customSize" width="82" height="81"/>
+            <connections>
+                <outlet property="imgCell" destination="mtc-r8-lDv" id="bgp-yF-Enf"/>
+                <outlet property="lblCell" destination="y1c-g5-W1A" id="Wob-0P-nWg"/>
+            </connections>
+            <point key="canvasLocation" x="18" y="49"/>
+        </collectionViewCell>
+    </objects>
+</document>
