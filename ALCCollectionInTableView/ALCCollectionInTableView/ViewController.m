@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CellServicos.h"
+#import "FeedbackCell.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -23,7 +24,7 @@
     self.tableView.dataSource = self;
     
     [self.tableView registerNib:[UINib nibWithNibName:@"CellServicos" bundle:nil] forCellReuseIdentifier:@"cellServicos"];
-    
+    [self.tableView registerNib:[UINib nibWithNibName:@"FeedbackCell" bundle:nil] forCellReuseIdentifier:@"cellFeedback"];
 }
 
 
@@ -33,16 +34,25 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    return 2;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    CellServicos *cell = [tableView dequeueReusableCellWithIdentifier:@"cellServicos"];
+    UITableViewCell *cell;
     
-    
+    switch (indexPath.row) {
+        case 0:{
+            CellServicos *cellServ = [tableView dequeueReusableCellWithIdentifier:@"cellServicos"];
+            cell = cellServ;
+        }
+        break;
+        case 1:{
+            FeedbackCell *cellFeed = [tableView dequeueReusableCellWithIdentifier:@"cellFeedback"];
+            cell = cellFeed;
+        }
+         break;
+    }
     return cell ;
-    
-    
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

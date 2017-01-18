@@ -15,9 +15,10 @@
 		6E1D078A1E27A1D8000F7D71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D07881E27A1D8000F7D71 /* LaunchScreen.storyboard */; };
 		6E1D07941E28EB7F000F7D71 /* CellServicos.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D07921E28EB7F000F7D71 /* CellServicos.m */; };
 		6E1D07951E28EB7F000F7D71 /* CellServicos.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D07931E28EB7F000F7D71 /* CellServicos.xib */; };
-		6E1D07981E2CEC7C000F7D71 /* CollectionViewCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D07971E2CEC7C000F7D71 /* CollectionViewCustom.m */; };
 		6E1D079C1E2CFC9D000F7D71 /* CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D079A1E2CFC9D000F7D71 /* CollectionCell.m */; };
 		6E1D079D1E2CFC9D000F7D71 /* CollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D079B1E2CFC9D000F7D71 /* CollectionCell.xib */; };
+		6E1D07B81E2EE31D000F7D71 /* FeedbackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D07B61E2EE31D000F7D71 /* FeedbackCell.m */; };
+		6E1D07B91E2EE31D000F7D71 /* FeedbackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D07B71E2EE31D000F7D71 /* FeedbackCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,11 +35,12 @@
 		6E1D07911E28EB7F000F7D71 /* CellServicos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellServicos.h; sourceTree = "<group>"; };
 		6E1D07921E28EB7F000F7D71 /* CellServicos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellServicos.m; sourceTree = "<group>"; };
 		6E1D07931E28EB7F000F7D71 /* CellServicos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellServicos.xib; sourceTree = "<group>"; };
-		6E1D07961E2CEC7C000F7D71 /* CollectionViewCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCustom.h; sourceTree = "<group>"; };
-		6E1D07971E2CEC7C000F7D71 /* CollectionViewCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCustom.m; sourceTree = "<group>"; };
 		6E1D07991E2CFC9D000F7D71 /* CollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCell.h; sourceTree = "<group>"; };
 		6E1D079A1E2CFC9D000F7D71 /* CollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCell.m; sourceTree = "<group>"; };
 		6E1D079B1E2CFC9D000F7D71 /* CollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCell.xib; sourceTree = "<group>"; };
+		6E1D07B51E2EE31D000F7D71 /* FeedbackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackCell.h; sourceTree = "<group>"; };
+		6E1D07B61E2EE31D000F7D71 /* FeedbackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackCell.m; sourceTree = "<group>"; };
+		6E1D07B71E2EE31D000F7D71 /* FeedbackCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedbackCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,14 +82,8 @@
 				6E1D07881E27A1D8000F7D71 /* LaunchScreen.storyboard */,
 				6E1D078B1E27A1D8000F7D71 /* Info.plist */,
 				6E1D077A1E27A1D8000F7D71 /* Supporting Files */,
-				6E1D07911E28EB7F000F7D71 /* CellServicos.h */,
-				6E1D07921E28EB7F000F7D71 /* CellServicos.m */,
-				6E1D07931E28EB7F000F7D71 /* CellServicos.xib */,
-				6E1D07961E2CEC7C000F7D71 /* CollectionViewCustom.h */,
-				6E1D07971E2CEC7C000F7D71 /* CollectionViewCustom.m */,
-				6E1D07991E2CFC9D000F7D71 /* CollectionCell.h */,
-				6E1D079A1E2CFC9D000F7D71 /* CollectionCell.m */,
-				6E1D079B1E2CFC9D000F7D71 /* CollectionCell.xib */,
+				6E1D07BA1E2EF5DC000F7D71 /* CellService */,
+				6E1D07BB1E2EF5F5000F7D71 /* CellFeedBack */,
 			);
 			path = ALCCollectionInTableView;
 			sourceTree = "<group>";
@@ -98,6 +94,29 @@
 				6E1D077B1E27A1D8000F7D71 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E1D07BA1E2EF5DC000F7D71 /* CellService */ = {
+			isa = PBXGroup;
+			children = (
+				6E1D07911E28EB7F000F7D71 /* CellServicos.h */,
+				6E1D07921E28EB7F000F7D71 /* CellServicos.m */,
+				6E1D07931E28EB7F000F7D71 /* CellServicos.xib */,
+				6E1D07991E2CFC9D000F7D71 /* CollectionCell.h */,
+				6E1D079A1E2CFC9D000F7D71 /* CollectionCell.m */,
+				6E1D079B1E2CFC9D000F7D71 /* CollectionCell.xib */,
+			);
+			name = CellService;
+			sourceTree = "<group>";
+		};
+		6E1D07BB1E2EF5F5000F7D71 /* CellFeedBack */ = {
+			isa = PBXGroup;
+			children = (
+				6E1D07B51E2EE31D000F7D71 /* FeedbackCell.h */,
+				6E1D07B61E2EE31D000F7D71 /* FeedbackCell.m */,
+				6E1D07B71E2EE31D000F7D71 /* FeedbackCell.xib */,
+			);
+			name = CellFeedBack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E1D07B91E2EE31D000F7D71 /* FeedbackCell.xib in Resources */,
 				6E1D078A1E27A1D8000F7D71 /* LaunchScreen.storyboard in Resources */,
 				6E1D079D1E2CFC9D000F7D71 /* CollectionCell.xib in Resources */,
 				6E1D07871E27A1D8000F7D71 /* Assets.xcassets in Resources */,
@@ -175,7 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E1D07821E27A1D8000F7D71 /* ViewController.m in Sources */,
-				6E1D07981E2CEC7C000F7D71 /* CollectionViewCustom.m in Sources */,
+				6E1D07B81E2EE31D000F7D71 /* FeedbackCell.m in Sources */,
 				6E1D077F1E27A1D8000F7D71 /* AppDelegate.m in Sources */,
 				6E1D077C1E27A1D8000F7D71 /* main.m in Sources */,
 				6E1D07941E28EB7F000F7D71 /* CellServicos.m in Sources */,
@@ -338,6 +358,7 @@
 				6E1D07901E27A1D8000F7D71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
