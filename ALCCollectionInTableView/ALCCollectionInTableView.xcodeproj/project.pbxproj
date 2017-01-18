@@ -22,6 +22,8 @@
 		6E1D07C21E2EF843000F7D71 /* UserFeedbackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D07C01E2EF843000F7D71 /* UserFeedbackCell.m */; };
 		6E1D07C31E2EF843000F7D71 /* UserFeedbackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D07C11E2EF843000F7D71 /* UserFeedbackCell.xib */; };
 		6E1D07C81E2F961C000F7D71 /* DJWStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D07C71E2F961C000F7D71 /* DJWStarRatingView.m */; };
+		6E1D07D01E2FC129000F7D71 /* CellComments.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D07CE1E2FC129000F7D71 /* CellComments.m */; };
+		6E1D07D11E2FC129000F7D71 /* CellComments.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D07CF1E2FC129000F7D71 /* CellComments.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +31,8 @@
 		6E1D077B1E27A1D8000F7D71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E1D077D1E27A1D8000F7D71 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6E1D077E1E27A1D8000F7D71 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6E1D07801E27A1D8000F7D71 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6E1D07811E27A1D8000F7D71 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6E1D07801E27A1D8000F7D71 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../ViewController.h; sourceTree = "<group>"; };
+		6E1D07811E27A1D8000F7D71 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../ViewController.m; sourceTree = "<group>"; };
 		6E1D07841E27A1D8000F7D71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E1D07861E27A1D8000F7D71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E1D07891E27A1D8000F7D71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,9 @@
 		6E1D07C11E2EF843000F7D71 /* UserFeedbackCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserFeedbackCell.xib; sourceTree = "<group>"; };
 		6E1D07C61E2F961C000F7D71 /* DJWStarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJWStarRatingView.h; sourceTree = "<group>"; };
 		6E1D07C71E2F961C000F7D71 /* DJWStarRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJWStarRatingView.m; sourceTree = "<group>"; };
+		6E1D07CD1E2FC129000F7D71 /* CellComments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellComments.h; sourceTree = "<group>"; };
+		6E1D07CE1E2FC129000F7D71 /* CellComments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellComments.m; sourceTree = "<group>"; };
+		6E1D07CF1E2FC129000F7D71 /* CellComments.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellComments.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,18 +86,15 @@
 		6E1D07791E27A1D8000F7D71 /* ALCCollectionInTableView */ = {
 			isa = PBXGroup;
 			children = (
+				6E1D07C91E2FC0F2000F7D71 /* Controllers */,
 				6E1D07C41E2F961C000F7D71 /* Dependencies */,
 				6E1D077D1E27A1D8000F7D71 /* AppDelegate.h */,
 				6E1D077E1E27A1D8000F7D71 /* AppDelegate.m */,
-				6E1D07801E27A1D8000F7D71 /* ViewController.h */,
-				6E1D07811E27A1D8000F7D71 /* ViewController.m */,
 				6E1D07831E27A1D8000F7D71 /* Main.storyboard */,
 				6E1D07861E27A1D8000F7D71 /* Assets.xcassets */,
 				6E1D07881E27A1D8000F7D71 /* LaunchScreen.storyboard */,
 				6E1D078B1E27A1D8000F7D71 /* Info.plist */,
 				6E1D077A1E27A1D8000F7D71 /* Supporting Files */,
-				6E1D07BA1E2EF5DC000F7D71 /* CellService */,
-				6E1D07BB1E2EF5F5000F7D71 /* CellFeedBack */,
 			);
 			path = ALCCollectionInTableView;
 			sourceTree = "<group>";
@@ -116,6 +118,7 @@
 				6E1D079B1E2CFC9D000F7D71 /* CollectionCell.xib */,
 			);
 			name = CellService;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 		6E1D07BB1E2EF5F5000F7D71 /* CellFeedBack */ = {
@@ -129,6 +132,7 @@
 				6E1D07C11E2EF843000F7D71 /* UserFeedbackCell.xib */,
 			);
 			name = CellFeedBack;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 		6E1D07C41E2F961C000F7D71 /* Dependencies */ = {
@@ -146,6 +150,44 @@
 				6E1D07C71E2F961C000F7D71 /* DJWStarRatingView.m */,
 			);
 			path = DJWStarRatingView;
+			sourceTree = "<group>";
+		};
+		6E1D07C91E2FC0F2000F7D71 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E1D07CA1E2FC0F2000F7D71 /* ViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6E1D07CA1E2FC0F2000F7D71 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6E1D07801E27A1D8000F7D71 /* ViewController.h */,
+				6E1D07811E27A1D8000F7D71 /* ViewController.m */,
+				6E1D07CB1E2FC0F2000F7D71 /* Cell */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6E1D07CB1E2FC0F2000F7D71 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6E1D07BB1E2EF5F5000F7D71 /* CellFeedBack */,
+				6E1D07BA1E2EF5DC000F7D71 /* CellService */,
+				6E1D07CC1E2FC0F2000F7D71 /* CellComments */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6E1D07CC1E2FC0F2000F7D71 /* CellComments */ = {
+			isa = PBXGroup;
+			children = (
+				6E1D07CD1E2FC129000F7D71 /* CellComments.h */,
+				6E1D07CE1E2FC129000F7D71 /* CellComments.m */,
+				6E1D07CF1E2FC129000F7D71 /* CellComments.xib */,
+			);
+			path = CellComments;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +256,7 @@
 				6E1D07871E27A1D8000F7D71 /* Assets.xcassets in Resources */,
 				6E1D07851E27A1D8000F7D71 /* Main.storyboard in Resources */,
 				6E1D07951E28EB7F000F7D71 /* CellServicos.xib in Resources */,
+				6E1D07D11E2FC129000F7D71 /* CellComments.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E1D07821E27A1D8000F7D71 /* ViewController.m in Sources */,
+				6E1D07D01E2FC129000F7D71 /* CellComments.m in Sources */,
 				6E1D07B81E2EE31D000F7D71 /* FeedbackCell.m in Sources */,
 				6E1D077F1E27A1D8000F7D71 /* AppDelegate.m in Sources */,
 				6E1D077C1E27A1D8000F7D71 /* main.m in Sources */,
