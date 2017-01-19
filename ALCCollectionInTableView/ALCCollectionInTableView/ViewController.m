@@ -9,8 +9,13 @@
 #import "ViewController.h"
 #import "CellServicos.h"
 #import "FeedbackCell.h"
+#import "CellComments.h"
 
-@interface ViewController ()
+@interface ViewController () <CellFeedbackDelegate>{
+    NSDictionary *userFeed;
+}
+    
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
@@ -22,9 +27,11 @@
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+   
     [self.tableView registerNib:[UINib nibWithNibName:@"CellServicos" bundle:nil] forCellReuseIdentifier:@"cellServicos"];
     [self.tableView registerNib:[UINib nibWithNibName:@"FeedbackCell" bundle:nil] forCellReuseIdentifier:@"cellFeedback"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"CellComments" bundle:nil] forCellReuseIdentifier:@"cellComments"];
 }
 
 
@@ -34,7 +41,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 2;
+    return 3;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -48,12 +55,28 @@
         break;
         case 1:{
             FeedbackCell *cellFeed = [tableView dequeueReusableCellWithIdentifier:@"cellFeedback"];
+            cellFeed.delegate = self;
             cell = cellFeed;
         }
          break;
+        case 2:{
+            CellComments *cellComments = [tableView dequeueReusableCellWithIdentifier:@"cellComments"];
+            if(userFeed){
+                [cellComments setNameUser:[userFeed objectForKey:@"user"]];
+                [cellComments setTxtComment:[userFeed objectForKey:@"comments"]];
+                cellComments.hidden = NO;
+            }
+            
+            cell = cellComments;
+        }
     }
     return cell ;
 }
+
+-(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return UITableViewAutomaticDimension;
+}
+
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     CGFloat heightRow = 100;
@@ -66,8 +89,20 @@
         case 1:
             heightRow = 190;
             break;
+        case 2:{
+            heightRow = UITableViewAutomaticDimension;
+        }
     }
     
     return heightRow;
 }
+
+-(void)setCommentsCell:(NSDictionary *)userFeedback{
+    
+    userFeed = userFeedback;
+    NSIndexPath *index = [NSIndexPath indexPathForItem:2 inSection:0];
+    [self.tableView reloadRowsAtIndexPaths:@[index] withRowAnimation:UITableViewRowAnimationFade];
+    
+}
+
 @end

@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol CellFeedbackDelegate <NSObject>
+
+-(void)setCommentsCell:(NSDictionary *)userFeedback;
+
+@end
+
 @interface FeedbackCell : UITableViewCell
+
+@property(weak,nonatomic) id<CellFeedbackDelegate>delegate;
 
 @end

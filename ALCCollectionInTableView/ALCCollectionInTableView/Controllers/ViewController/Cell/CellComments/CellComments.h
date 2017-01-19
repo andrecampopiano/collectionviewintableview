@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+
+
+
 @interface CellComments : UITableViewCell
+
+-(void)setTxtComment:(NSString*)txtcomment;
+-(void)setNameUser:(NSString*)userName;
 
 @end

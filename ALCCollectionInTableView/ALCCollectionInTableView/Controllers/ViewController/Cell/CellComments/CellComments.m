@@ -7,6 +7,13 @@
 //
 
 #import "CellComments.h"
+#import "UIViewController+Utils.h"
+
+@interface CellComments()
+@property (weak, nonatomic) IBOutlet UITextView *txtComments;
+@property (weak, nonatomic) IBOutlet UILabel *lblName;
+
+@end
 
 @implementation CellComments
 
@@ -19,6 +26,14 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+-(void)setNameUser:(NSString *)userName{
+    self.lblName.text = userName;
+}
+
+-(void)setTxtComment:(NSString *)txtcomment{
+    [self.txtComments setText:txtcomment];
 }
 
 @end
