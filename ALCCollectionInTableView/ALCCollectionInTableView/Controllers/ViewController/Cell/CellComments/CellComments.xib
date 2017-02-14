@@ -20,7 +20,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2h9-LQ-ada">
-                        <rect key="frame" x="8" y="41.5" width="304" height="107.5"/>
+                        <rect key="frame" x="8" y="57" width="304" height="92"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <string key="text">dsadsaadadasada
 dsadsadasda
@@ -30,8 +30,8 @@ dsdasdsdsdas</string>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18F-fJ-t2D">
-                        <rect key="frame" x="8" y="13" width="304" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="8" y="18" width="312" height="31"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -39,8 +39,8 @@ dsdasdsdsdas</string>
                 <constraints>
                     <constraint firstItem="2h9-LQ-ada" firstAttribute="top" secondItem="18F-fJ-t2D" secondAttribute="bottom" constant="8" id="1Iq-Ap-asl"/>
                     <constraint firstItem="2h9-LQ-ada" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="A1W-xm-S4u"/>
-                    <constraint firstItem="18F-fJ-t2D" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="KiU-fY-5Ac"/>
-                    <constraint firstItem="18F-fJ-t2D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="dd9-Mf-gIg"/>
+                    <constraint firstItem="18F-fJ-t2D" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="8" id="KiU-fY-5Ac"/>
+                    <constraint firstItem="18F-fJ-t2D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="dd9-Mf-gIg"/>
                     <constraint firstItem="18F-fJ-t2D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="tMq-kY-Htg"/>
                     <constraint firstAttribute="bottom" secondItem="2h9-LQ-ada" secondAttribute="bottom" constant="8" id="vjm-27-2xU"/>
                     <constraint firstAttribute="trailing" secondItem="2h9-LQ-ada" secondAttribute="trailing" constant="8" id="xR7-WW-cBU"/>
